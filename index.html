@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="icon" href="resources/favicon.ico" type="image/x-icon" sizes="96x96" />
+
+  <title>Business Blog Card | devChallenges.io</title>
+
+  <!--You are welcome to delete these styles or modify them in your own stylesheet -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      background-color: #F2F5F9;
+      font-family: 'Lato', sans-serif;
+      font-size: 1rem;
+    }
+
+    main {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      /* width: fit-content; */
+      width: 418px;
+      border-radius: 12px;
+      overflow: hidden;
+      background-color: #FFF;
+    }
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      padding: 0 28px 28px 28px;
+      gap: 16px;
+    }
+
+    h2 {
+      /* 24px */
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: #111729;
+      letter-spacing: -0.8px;
+    }
+
+    .card-body p {
+      color: #4A5567;
+    }
+
+    .container {
+      position: relative;
+    }
+
+    .hero-img {
+      z-index: 0;
+    }
+
+    .overlay-img {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: 999;
+    }
+
+    .card-content {
+      /* margin-top: 16px; */
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .card-footer {
+      display: flex;
+      align-items: center;
+      margin-top: 4px;
+      padding: 28px 28px 28px;
+      border-top: 1px solid #F2F5F9;
+      /* 14px */
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #4A5567;
+      gap: 16px;
+    }
+
+    .avatar {
+      vertical-align: middle;
+      width: 40px;
+      height: 40px;
+      border: 4px solid #F2F5F9;
+      border-radius: 50%;
+    }
+
+    .author-footer {
+      display: flex;
+      flex-direction: column;
+      font-weight: bold;
+    }
+
+    .author-footer p {
+      color: #111729;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="card">
+      <div class="container">
+        <img class="hero-img" src="./resources/hero-image-1.jpg" alt="card-image">
+        <img class="overlay-img" src="./resources/white-overlay.svg" />
+      </div>
+
+      <div class="card-body">
+        <h2>Perfect solution for small business</h2>
+        <p>
+          Small businesses need to generate leads to grow. You can use tools like Ringy.
+        </p>
+        <!-- <div class="card-content">
+         
+        </div> -->
+      </div>
+
+      <div class="card-footer">
+        <img class="avatar" src="./resources/avatar-image-business-card-1.png" alt="avatat" />
+        <div class="author-footer">
+          <p>Amy Burgess</p>
+          <span>Customer Manger, Solution Oy</span>
+        </div>
+
+      </div>
+    </div>
+  </main>
+  </div>
+</body>
+
+</html>
